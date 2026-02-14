@@ -1,19 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
+    <!-- SEO básico -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chaveiro Alemão | Atendimento 24h</title>
+    <meta name="description" content="Chaveiro Alemão - atendimento rápido, 24h, residencial, automotivo e comercial.">
+    <meta name="keywords" content="chaveiro, chaveiro 24h, abertura de portas, cópia de chaves">
+
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <h1>CHAVEIRO</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nemo. Natus architecto minima rerum a, sequi nihil aliquam quasi rem libero, minus maxime aspernatur quas necessitatibus quae nulla non consectetur!</p>
 
-    <img src="imgs/image.png" alt="ok">
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="container">
+        <!-- Logo em texto -->
+        <h1 class="logo">Chaveiro Alemão</h1>
 
-    <p>TESTE TESTE TESTE</p>
+        <!-- Menu -->
+        <nav class="nav">
+            <a href="#hero">Início</a>
+            <a href="#historia">História</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+        </nav>
 
-    <h2>ALEMÃO</h2>
-    <img src="imgs/image.png" alt="okk">
+        <!-- Botão WhatsApp -->
+        <a href="#" class="btn-whats">Chamar no WhatsApp</a>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="hero" class="hero">
+    <!-- Container vazio para imagem de fundo -->
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+        <h2>Chaveiro 24h com Atendimento Rápido</h2>
+        <p>Segurança, agilidade e confiança para sua casa e empresa.</p>
+
+        <div class="hero-buttons">
+            <a href="#contato" class="btn-primary">Solicitar Orçamento</a>
+            <a href="#" class="btn-secondary">Ligar Agora</a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= INDICADORES ================= -->
+<section class="stats">
+    <div class="stat">
+        <span class="number" data-target="10">0</span>
+        <p>Anos de Experiência</p>
+    </div>
+
+    <div class="stat">
+        <span class="number" data-target="2500">0</span>
+        <p>Clientes Atendidos</p>
+    </div>
+</section>
+
+<!-- ================= HISTÓRIA ================= -->
+<section id="historia" class="historia">
+    <div class="container two-columns">
+        <div>
+            <h2>Nossa História</h2>
+            <p>
+                O Chaveiro Alemão atua há anos oferecendo serviços rápidos,
+                seguros e de alta qualidade, conquistando a confiança de
+                milhares de clientes.
+            </p>
+        </div>
+
+        <!-- Área livre para imagem -->
+        <div class="img-box"></div>
+    </div>
+</section>
+
+<!-- ================= SERVIÇOS ================= -->
+<section id="servicos" class="servicos">
+    <h2>Nossos Serviços</h2>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon"></div>
+            <h3>Abertura de Portas</h3>
+            <p>Residenciais, comerciais e automotivas.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon"></div>
+            <h3>Cópia de Chaves</h3>
+            <p>Chaves comuns, codificadas e especiais.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon"></div>
+            <h3>Troca de Fechaduras</h3>
+            <p>Instalação e manutenção.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= DEPOIMENTOS ================= -->
+<section id="depoimentos" class="depoimentos">
+    <h2>O que dizem nossos clientes</h2>
+
+    <div class="cards">
+        <div class="card">
+            <p>"Atendimento rápido e excelente!"</p>
+            <span>- João</span>
+        </div>
+
+        <div class="card">
+            <p>"Resolveu meu problema em minutos."</p>
+            <span>- Maria</span>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section id="contato" class="contato">
+    <h2>Contato</h2>
+
+    <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="tel" placeholder="Telefone" required>
+        <textarea placeholder="Mensagem"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p>📞 (00) 00000-0000</p>
+    <p>📍 Sua Cidade</p>
+    <p>⏰ Atendimento 24h</p>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>© 2026 Chaveiro Alemão. Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

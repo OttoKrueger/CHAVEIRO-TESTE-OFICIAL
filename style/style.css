@@ -1,0 +1,244 @@
+/* ================= RESET GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= VARIÁVEIS ================= */
+:root {
+    --preto: #111;
+    --cinza: #333;
+    --cinza-claro: #f5f5f5;
+    --dourado: #d4af37;
+}
+
+/* ================= BODY GLOBAL ================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--cinza-claro);
+    color: var(--cinza);
+    line-height: 1.6;
+}
+
+/* ================= PADRÕES GERAIS ================= */
+section {
+    width: 100%;
+    padding: 80px 20px;
+}
+
+h1, h2, h3 {
+    color: var(--preto);
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ================= HEADER ================= */
+.header {
+    width: 100%;
+    background: var(--preto);
+    color: white;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav a {
+    color: white;
+    font-weight: 500;
+}
+
+.btn-whats {
+    background: var(--dourado);
+    color: black;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ================= HERO ================= */
+.hero {
+    position: relative;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #000;
+    color: white;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    opacity: 0.5;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 700px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: var(--dourado);
+    padding: 12px 22px;
+    color: black;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    padding: 12px 22px;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+}
+
+/* ================= STATS ================= */
+.stats {
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+}
+
+.stat .number {
+    font-size: 40px;
+    color: var(--dourado);
+}
+
+/* ================= HISTÓRIA ================= */
+.historia {
+    background: var(--cinza-claro);
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.img-box {
+    width: 100%;
+    height: 300px;
+    background: #ccc;
+}
+
+/* ================= SERVIÇOS ================= */
+.servicos {
+    background: white;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: var(--cinza-claro);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* ================= DEPOIMENTOS ================= */
+.depoimentos {
+    background: var(--cinza);
+    color: white;
+    text-align: center;
+}
+
+.depoimentos .card {
+    background: #222;
+    color: white;
+}
+
+/* ================= CONTATO ================= */
+.contato {
+    text-align: center;
+    background: white;
+}
+
+.contato form {
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato input,
+.contato textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contato button {
+    background: var(--dourado);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: var(--preto);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
