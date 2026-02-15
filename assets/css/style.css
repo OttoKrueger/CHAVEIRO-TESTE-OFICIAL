@@ -242,3 +242,10 @@ a {
         gap: 20px;
     }
 }
+
+/* ================= BOTÃO FLUTUANTE WHATSAPP ================= */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
